@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800;900&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+svg{
+  background:#101010;
+}
+svg text{
+  font-size:5vw;
+  font-weight:400;
+  stroke-width:1px;
+  fill:transparent;
+  stroke:#FFFF00;
+  letter-spacing:4px;
+  animation:effect 6s infinite alternate;
+}
+@keyframes effect{
+  0%{
+    stroke-dasharray:0 70%;
+  }
+  100%{
+    stroke-dasharray:10% 0%;
+    stroke-dashoffset:20%;
+    text-shadow:0px 0px 20px #ff0, 0px 0px 40px #ff0, 0px 0px 60px #ff0, 0px 0px 80px #ff0, 0px 0px 100px #ff0;
+  }
+}
